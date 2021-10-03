@@ -9,7 +9,7 @@
 <body>
       <header>
       <a class="item" href="index.php"> Home </a>
-      <a class="item" href="http://localhost/covid-care/category.php?id=8">Resources</a>
+      <a class="item" href="category.php?id=8">Resources</a>
       <?php
       session_start();
       // var_dump($_SESSION);

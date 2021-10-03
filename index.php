@@ -13,7 +13,7 @@ $result = mysqli_query($conn, $sql);
 if(isset($_SESSION['signed_in']) == false)
 {
     //the user is not signed in
-    header("Location: http://localhost/covid-care/signin.php");
+    header("Location: signin.php");
     exit();
 }
 else{

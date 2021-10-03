@@ -22,7 +22,7 @@ if(isset($_POST['certificate_link']))
     }
   }
   else{
-    header("Location: http://localhost/covid-care/index.php");
+    header("Location: index.php");
     exit();
   }
 ?>

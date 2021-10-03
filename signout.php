@@ -5,7 +5,7 @@ include 'header.php';
 
 session_destroy();
 
-header("Location: http://localhost/covid-care/signin.php");
+header("Location: signin.php");
     exit();
 
 

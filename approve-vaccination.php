@@ -5,11 +5,11 @@ include 'header.php';
 if(isset($_SESSION['signed_in']) == false)
 {
     //the user is not signed in
-    header("Location: http://localhost/covid-care/signin.php");
+    header("Location: signin.php");
     exit();
 }
 elseif ($_SESSION['user_level']==0) {
-    header("Location: http://localhost/covid-care/index.php");
+    header("Location: index.php");
     exit();
 }
 else{

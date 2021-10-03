@@ -29,7 +29,7 @@ if(isset($_POST['user_id']))
     }
   }
   else{
-    header("Location: http://localhost/covid-care/index.php");
+    header("Location: index.php");
     exit();
   }
 ?>

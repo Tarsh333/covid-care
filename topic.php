@@ -5,7 +5,7 @@ include 'header.php';
 if(isset($_SESSION['signed_in']) == false)
 {
     //the user is not signed in
-    header("Location: http://localhost/covid-care/signin.php");
+    header("Location: signin.php");
     exit();
 }
 else{
@@ -94,7 +94,7 @@ else
                         echo '<td class="rightpart">';
                             echo date('d-m-Y', strtotime($row['post_date']));
                             echo "\n";
-                            echo '<a href="http://localhost/covid-care/user.php?id='.$row['user_id'].'">'.$row['user_name'].'</a>';
+                            echo '<a href="user.php?id='.$row['user_id'].'">'.$row['user_name'].'</a>';
                             // echo "userid".$row['user_id']."session id".$_SESSION['user_id'];
                             if ($row['user_id']==$_SESSION['user_id']) {
                                 echo '<form class="display-inline"  method="post" action="delete.php">';

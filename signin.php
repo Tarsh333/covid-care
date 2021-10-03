@@ -126,7 +126,7 @@ echo '
                         $_SESSION['user_level'] = $row['user_level'];
                     }
 
-                    header("Location: http://localhost/covid-care/index.php");
+                    header("Location: index.php");
                     exit();
                 }
             }

@@ -18,7 +18,7 @@ if(isset($_POST['post_id']))
     }
   }
   else{
-    header("Location: http://localhost/covid-care/index.php");
+    header("Location: index.php");
     exit();
   }
 ?>
