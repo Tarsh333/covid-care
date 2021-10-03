@@ -1,9 +1,9 @@
 <?php
 //connect.php
-$server = 'sql304.epizy.com';
-$username   = 'epiz_29928039';
-$password   = 'r1fovCl022q';
-$database   = 'epiz_29928039_covidCare';
+$server = 'remotemysql.com';
+$username   = 'Ka2agp4afb';
+$password   = 'dJf7tXzbk6';
+$database   = 'Ka2agp4afb';
 
 // Create connection
 $conn = new mysqli($server, $username, $password);
