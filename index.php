@@ -30,7 +30,7 @@ else{
 $sql = "SELECT  *
    FROM categories
    INNER JOIN topics
-   ON categories.cat_id = topics.topic_id;";
+   ON categories.cat_id = topics.topic_cat;";
     $result = mysqli_query($conn, $sql);
 if(!$result)
 {
