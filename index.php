@@ -3,13 +3,8 @@
 include 'connect.php';
 include 'header.php';
 
-$sql = "SELECT  *
-   FROM CATEGORIES
-   INNER JOIN TOPICS
-   ON CATEGORIES.CAT_ID = TOPICS.TOPIC_CAT;";
 
 
-$result = mysqli_query($conn, $sql);
 if(isset($_SESSION['signed_in']) == false)
 {
     //the user is not signed in
@@ -32,9 +27,15 @@ else{
         echo '<form class="vaccine-link" method="post" action="vaccination-update.php"><input  name="certificate_link" required type="url" placeholder="Add link to your vaccination certificate uploaded on google drive"></input><button type="submit">Submit</button></form>';
     }
     
+$sql = "SELECT  *
+   FROM CATEGORIES
+   INNER JOIN TOPICS
+   ON CATEGORIES.CAT_ID = TOPICS.TOPIC_CAT;";
+    $result = mysqli_query($conn, $sql);
 if(!$result)
 {
     echo 'The categories could not be displayed, please try again later.';
+    echo mysqli_error($conn);
 }
 else
 {
